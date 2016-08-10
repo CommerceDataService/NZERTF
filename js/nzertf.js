@@ -12,3 +12,16 @@ $('.navbar-toggle').click(function () {
     //$(this).removeClass("in").addClass("collapse");
     $(".childMenu.in").removeClass("in").addClass("collapse");
 });
+
+
+// Scroll Spy for Side Navbar
+$(document).ready(function() {
+	$('body').scrollspy({ 
+	target: '#side-nav',
+	offset: 0 
+	});
+});
+
+// $('[data-spy="scroll"]').each(function () {
+//   var $spy = $(this).scrollspy('refresh')
+// });
